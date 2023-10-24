@@ -395,7 +395,7 @@ struct newAccountNode
 	string lastName;
 	string accountStatus;
 	long long phoneNumber;
-	long long CNIC;
+	long long AadhaarNo;
 	long double cash;
 	string emailAddress;
 	address homeAddress;
@@ -439,8 +439,8 @@ public:
 		temp->homeAddress.setAddress();
 		cout << "\t\t\t\t Kindly write down your Phone Number -> ";
 		cin >> temp->phoneNumber;
-		cout << "\t\t\t\t Kindly write down your CNIC -> ";
-		cin >> temp->CNIC;
+		cout << "\t\t\t\t Kindly write down your AadhaarNo -> ";
+		cin >> temp->AadhaarNo;
 		cout << "\t\t\t\t Do you want to get a Debit Card: write Yes(1) or No(0)-> ";
 		cin >> debitCardOpt;
 
@@ -496,19 +496,17 @@ public:
 		cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 		cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-		cout << "\t\t\t ##########################################################################################################################" << endl;
-		cout << "\t\t\t #"
-			 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t\t   #" << endl;
-		cout << "\t\t\t #"
-			 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-		cout << "\t\t\t #"
-			 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-
+		cout << "		||===============================================================================||" << endl;
+		cout << "		                           APNA BANK                                               " << endl;
+		cout << "		                                                                                   " << endl;
+		cout << "		                                                                                   " << endl;
+		cout << "		  When you see #, it means you should enter a number, such as 1, 2, 3, 4, 5, etc.  "<< endl;
+		cout << "		___________________________________________________________________________________" << endl << endl;
 		cout << "\t\t\t\t----------" << endl;
 		cout << "\t\t\t\tFirst Name: " << temp->firstName << endl;
 		cout << "\t\t\t\tLast Name: " << temp->lastName << endl;
 		cout << "\t\t\t\tEmail Address: " << temp->emailAddress << endl;
-		cout << "\t\t\t\tCNIC: " << temp->CNIC << endl;
+		cout << "\t\t\t\tAadhaarNo: " << temp->AadhaarNo << endl;
 		cout << "\t\t\t\tPhone#: " << temp->phoneNumber << endl;
 		cout << "\t\t\t\t ---Address--- " << endl;
 		temp->homeAddress.displayAddress();
@@ -580,7 +578,7 @@ public:
 				cout << "\t\t\t\t----------" << endl;
 				cout << "\t\t\t\tFirst Name: " << temp->firstName << endl;
 				cout << "\t\t\t\tLast Name: " << temp->lastName << endl;
-				cout << "\t\t\t\tCNIC: " << temp->CNIC << endl;
+				cout << "\t\t\t\tAadhaarNo: " << temp->AadhaarNo << endl;
 				cout << "\t\t\t\t ---Address--- " << endl;
 				temp->homeAddress.displayAddress();
 				cout << "\t\t\t\t -------------" << endl;
@@ -617,7 +615,7 @@ public:
 				cout << "\t\t\t\t----------" << endl;
 				cout << "\t\t\t\tFirst Name: " << temp->firstName << endl;
 				cout << "\t\t\t\tLast Name: " << temp->lastName << endl;
-				cout << "\t\t\t\tCNIC: " << temp->CNIC << endl;
+				cout << "\t\t\t\tAadhaarNo: " << temp->AadhaarNo << endl;
 				cout << "\t\t\t\t ---Address--- " << endl;
 				temp->homeAddress.displayAddress();
 				cout << "\t\t\t\t -------------" << endl;
@@ -866,7 +864,7 @@ public:
 			cout << "\t\t\t\tFirst Name: " << accountDisplay->firstName << endl;
 			cout << "\t\t\t\tLast Name: " << accountDisplay->lastName << endl;
 			cout << "\t\t\t\tEmail Address: " << accountDisplay->emailAddress << endl;
-			cout << "\t\t\t\tCNIC: " << accountDisplay->CNIC << endl;
+			cout << "\t\t\t\tAadhaarNo: " << accountDisplay->AadhaarNo << endl;
 			cout << "\t\t\t\tPhone#: " << accountDisplay->phoneNumber << endl;
 			cout << "\t\t\t\tCash: " << accountDisplay->cash << endl;
 			cout << "\t\t\t\t ---Address--- " << endl;
@@ -906,7 +904,7 @@ public:
 			cout << "\t\t\t\tFirst Name: " << temp->firstName << endl;
 			cout << "\t\t\t\tLast Name: " << temp->lastName << endl;
 			cout << "\t\t\t\tEmail Address: " << temp->emailAddress << endl;
-			cout << "\t\t\t\tCNIC: " << temp->CNIC << endl;
+			cout << "\t\t\t\tAadhaarNo: " << temp->AadhaarNo << endl;
 			cout << "\t\t\t\tPhone#: " << temp->phoneNumber << endl;
 			cout << "\t\t\t\t ---Address--- " << endl;
 			temp->homeAddress.displayAddress();
@@ -1012,13 +1010,12 @@ BANKSCREEN:
 		cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 		cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-		cout << "\t\t\t ##########################################################################################################################" << endl;
-		cout << "\t\t\t #"
-			 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-		cout << "\t\t\t #"
-			 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-		cout << "\t\t\t #"
-			 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
+		cout << "		||===============================================================================||" << endl;
+		cout << "		                           APNA BANK                                               " << endl;
+		cout << "		                                                                                   " << endl;
+		cout << "		                                                                                   " << endl;
+		cout << "		  When you see #, it means you should enter a number, such as 1, 2, 3, 4, 5, etc.  "<< endl;
+		cout << "		___________________________________________________________________________________" << endl << endl;
 		switch (optionInBankOne)
 		{
 		case 1:
@@ -1052,14 +1049,13 @@ BANKSCREEN:
 			cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 			cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-			cout << "\t\t\t ##########################################################################################################################" << endl;
-			cout << "\t\t\t #"
-				 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-			cout << "\t\t\t #"
-				 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-			cout << "\t\t\t #"
-				 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-			cout << "\t\t\t  Wrong Option Entered, press any key to go back to Main Menu " << endl;
+		    cout << "			||=========================================================================||" << endl;
+    		cout << "			||                            APNA BANK                                    ||" << endl;
+    		cout << "			||                         ______________                                  ||" << endl;
+    		cout << "			||       Wrong Option Entered, press any key to go back to Main Menu       ||" << endl;
+    		cout << "			||                                                                         ||" << endl;
+    		cout << "			||=========================================================================||" << endl;
+    		cout << "			||=========================================================================||" << endl;
 			_getch();
 			system("cls");
 			goto INSIDEBANK;
@@ -1079,13 +1075,12 @@ BANKSCREEN:
 			cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 			cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-			cout << "\t\t\t ##########################################################################################################################" << endl;
-			cout << "\t\t\t #"
-				 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-			cout << "\t\t\t #"
-				 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-			cout << "\t\t\t #"
-				 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
+			cout << "		||===============================================================================||" << endl;
+			cout << "		                           APNA BANK                                               " << endl;
+			cout << "		                                                                                   " << endl;
+			cout << "		                                                                                   " << endl;
+			cout << "		  When you see #, it means you should enter a number, such as 1, 2, 3, 4, 5, etc.  "<< endl;
+			cout << "		___________________________________________________________________________________" << endl;
 			switch (optionInATMtwo)
 			{
 			case 1:
@@ -1121,14 +1116,15 @@ BANKSCREEN:
 				cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 				cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-				cout << "\t\t\t ##########################################################################################################################" << endl;
-				cout << "\t\t\t #"
-					 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-				cout << "\t\t\t #"
-					 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-				cout << "\t\t\t #"
-					 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-				cout << "\t\t\t  Wrong Option Entered, press any key to go back to Main Menu " << endl;
+					cout << "			||=========================================================================||" << endl;
+					cout << "			||                            APNA BANK                                    ||" << endl;
+					cout << "			||                         ______________                                  ||" << endl;
+					cout << "			||                                                                         ||" << endl;
+					cout << "			||                                                                         ||" << endl;
+					cout << "			||         Wrong Option Entered, press any key to go back to Main Menu     ||" << endl;
+					cout << "			||                                                                         ||" << endl;
+					cout << "			||=========================================================================||" << endl;
+					cout << "			||=========================================================================||" << endl;
 				_getch();
 				system("cls");
 				goto ATMSCREEN;
@@ -1140,15 +1136,15 @@ BANKSCREEN:
 			cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 			cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-			cout << "\t\t\t ##########################################################################################################################" << endl;
-			cout << "\t\t\t #"
-				 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-			cout << "\t\t\t #"
-				 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-			cout << "\t\t\t #"
-				 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-			cout << "\t\t\t # Invalid Credentials Added" << endl;
-			cout << "\t\t\t Press any key to return to Bank Menu" << endl;
+		    cout << "			||=========================================================================||" << endl;
+    		cout << "			||                            APNA BANK                                    ||" << endl;
+    		cout << "			||                         ______________                                  ||" << endl;
+    		cout << "			||               # Invalid Credentials Added                               ||" << endl;
+			cout << "			||                                                                         ||" << endl;
+    		cout << "			||             Press any key to return to Bank Menu                        ||" << endl;
+    		cout << "			||                                                                         ||" << endl;
+    		cout << "			||=========================================================================||" << endl;
+    		cout << "			||=========================================================================||" << endl;
 			_getch();
 			system("cls");
 			goto BANKSCREEN;
@@ -1172,13 +1168,12 @@ BANKSCREEN:
 				cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 				cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-				cout << "\t\t\t ##########################################################################################################################" << endl;
-				cout << "\t\t\t #"
-					 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-				cout << "\t\t\t #"
-					 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-				cout << "\t\t\t #"
-					 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
+				cout << "		||===============================================================================||" << endl;
+				cout << "		                           APNA BANK                                               " << endl;
+				cout << "		                                                                                   " << endl;
+				cout << "		                                                                                   " << endl;
+				cout << "		  When you see #, it means you should enter a number, such as 1, 2, 3, 4, 5, etc.  "<< endl;
+				cout << "		___________________________________________________________________________________" << endl;
 				switch (optionInAdminAccOpen)
 				{
 				case 1:
@@ -1204,14 +1199,15 @@ BANKSCREEN:
 					cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 					cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-					cout << "\t\t\t ##########################################################################################################################" << endl;
-					cout << "\t\t\t #"
-						 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-					cout << "\t\t\t #"
-						 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-					cout << "\t\t\t #"
-						 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-					cout << "\t\t\t  Wrong Option Entered, press any key to go back to Main Menu " << endl;
+					cout << "			||=========================================================================||" << endl;
+					cout << "			||                            APNA BANK                                    ||" << endl;
+					cout << "			||                         ______________                                  ||" << endl;
+					cout << "			||                                                                         ||" << endl;
+					cout << "			||                                                                         ||" << endl;
+					cout << "			||         Wrong Option Entered, press any key to go back to Main Menu     ||" << endl;
+					cout << "			||                                                                         ||" << endl;
+					cout << "			||=========================================================================||" << endl;
+					cout << "			||=========================================================================||" << endl;
 					_getch();
 					system("cls");
 					goto ACCOPPSCREN;
@@ -1224,13 +1220,12 @@ BANKSCREEN:
 				cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 				cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-				cout << "\t\t\t ##########################################################################################################################" << endl;
-				cout << "\t\t\t #"
-					 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-				cout << "\t\t\t #"
-					 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-				cout << "\t\t\t #"
-					 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
+				cout << "		||===============================================================================||" << endl;
+				cout << "		                           APNA BANK                                               " << endl;
+				cout << "		                                                                                   " << endl;
+				cout << "		                                                                                   " << endl;
+				cout << "		  When you see #, it means you should enter a number, such as 1, 2, 3, 4, 5, etc.  "<< endl;
+				cout << "		___________________________________________________________________________________" << endl;
 				switch (optionInAdminBillPaymt)
 				{
 				case 1:
@@ -1257,14 +1252,15 @@ BANKSCREEN:
 					cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 					cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-					cout << "\t\t\t ##########################################################################################################################" << endl;
-					cout << "\t\t\t #"
-						 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-					cout << "\t\t\t #"
-						 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-					cout << "\t\t\t #"
-						 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-					cout << "\t\t\t  Wrong Option Entered, press any key to go back to Main Menu " << endl;
+					cout << "			||=========================================================================||" << endl;
+					cout << "			||                            APNA BANK                                    ||" << endl;
+					cout << "			||                         ______________                                  ||" << endl;
+					cout << "			||                                                                         ||" << endl;
+					cout << "			||                                                                         ||" << endl;
+					cout << "			||         Wrong Option Entered, press any key to go back to Main Menu     ||" << endl;
+					cout << "			||                                                                         ||" << endl;
+					cout << "			||=========================================================================||" << endl;
+					cout << "			||=========================================================================||" << endl;
 					_getch();
 					system("cls");
 					goto BILLPAYSCREEN;
@@ -1280,14 +1276,15 @@ BANKSCREEN:
 				cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 				cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-				cout << "\t\t\t ##########################################################################################################################" << endl;
-				cout << "\t\t\t #"
-					 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-				cout << "\t\t\t #"
-					 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-				cout << "\t\t\t #"
-					 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-				cout << "\t\t\t  Wrong Option Entered, press any key to go back to Main Menu " << endl;
+		    cout << "			||=========================================================================||" << endl;
+    		cout << "			||                            APNA BANK                                    ||" << endl;
+    		cout << "			||                         ______________                                  ||" << endl;
+    		cout << "			||                                                                         ||" << endl;
+			cout << "			||                                                                         ||" << endl;
+    		cout << "			||         Wrong Option Entered, press any key to go back to Main Menu     ||" << endl;
+    		cout << "			||                                                                         ||" << endl;
+    		cout << "			||=========================================================================||" << endl;
+    		cout << "			||=========================================================================||" << endl;
 				_getch();
 				system("cls");
 				goto ADMINSCREEN;
@@ -1299,15 +1296,15 @@ BANKSCREEN:
 			cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 			cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-			cout << "\t\t\t ##########################################################################################################################" << endl;
-			cout << "\t\t\t #"
-				 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-			cout << "\t\t\t #"
-				 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-			cout << "\t\t\t #"
-				 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-			cout << "\t\t\t # Invalid Credentials Added" << endl;
-			cout << "\t\t\t Press any key to return to Bank Menu" << endl;
+		    cout << "			||=========================================================================||" << endl;
+    		cout << "			||                            APNA BANK                                    ||" << endl;
+    		cout << "			||                         ______________                                  ||" << endl;
+    		cout << "			||               # Invalid Credentials Added                               ||" << endl;
+			cout << "			||                                                                         ||" << endl;
+    		cout << "			||             Press any key to return to Bank Menu                        ||" << endl;
+    		cout << "			||                                                                         ||" << endl;
+    		cout << "			||=========================================================================||" << endl;
+    		cout << "			||=========================================================================||" << endl;
 			_getch();
 			system("cls");
 			goto BANKSCREEN;
@@ -1319,17 +1316,17 @@ BANKSCREEN:
 		break;
 	default:
 		system("cls");
+		cout << endl << endl << endl << endl;
 		cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 		cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-		cout << "\t\t\t ##########################################################################################################################" << endl;
-		cout << "\t\t\t #"
-			 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-		cout << "\t\t\t #"
-			 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-		cout << "\t\t\t #"
-			 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-		cout << "\t\t\t  Wrong Option Entered, press any key to go back to Main Menu " << endl;
+		    cout << "			||=========================================================================||" << endl;
+    		cout << "			||                            APNA BANK                                    ||" << endl;
+    		cout << "			||                         ______________                                  ||" << endl;
+    		cout << "			||       Wrong Option Entered, press any key to go back to Main Menu       ||" << endl;
+    		cout << "			||                                                                         ||" << endl;
+    		cout << "			||=========================================================================||" << endl;
+    		cout << "			||=========================================================================||" << endl;
 		_getch();
 		system("cls");
 		goto BANKSCREEN;
@@ -1340,175 +1337,43 @@ BANKSCREEN:
 	return 0;
 }
 
-void startScreen(tm *tPtr)
-{
+void startScreen(tm *tPtr) {
+	cout << endl << endl << endl << endl;
 	cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 	cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
-
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\tWelcome\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t  to\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\tDeveloped  by Anupam Debnath #" << endl;
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t ", system("pause");
+ 	cout << "								||========================================||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||           Welcome to APNA BANK         ||" << endl;
+    cout << "								||         ________________________       ||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||========================================||" << endl;
+    cout << "								||	     Developed  by Anupam Debnath ||" << endl;
+    cout << "								||========================================||" << endl;
+  cout << "\t\t\t\t\t\t\t\t", system("pause");
 }
+
 
 void endScreen(tm *tPtr)
 {
+	cout << endl << endl << endl << endl;
 	cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 	cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\tThank you\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\tfor using\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\tDeveloped  by Anupam Debnath  #" << endl;
-	cout << "\t\t\t ##########################################################################################################################" << endl;
+	cout << "								||========================================||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||           Thank You for using          ||" << endl;
+    cout << "								||                APNA BANK               ||" << endl;
+    cout << "								||         ________________________       ||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||========================================||" << endl;
+    cout << "								||	     Developed  by Anupam Debnath ||" << endl;
+    cout << "								||========================================||" << endl;
 }
 
 void bankEnterScreen(tm *tPtr, int &opt)
@@ -1516,85 +1381,21 @@ void bankEnterScreen(tm *tPtr, int &opt)
 	cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 	cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t   Choose an option:\t\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    1) Enter Bank\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    2) Enter ATM\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    3) Admin Login\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    4) Exit\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t Enter Option: ", cin >> opt, cout << endl;
+	cout << "								||========================================||" << endl;
+    cout << "								||                APNA BANK               ||" << endl;
+    cout << "								||             _______________            ||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||      Choose an option:                 ||" << endl;
+    cout << "								||          1. Enter Bank                 ||" << endl;
+    cout << "								||          2. Enter ATM                  ||" << endl;
+    cout << "								||          3. Admin Login                ||" << endl;
+    cout << "								||          4. Exit                       ||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||                                        ||" << endl;
+    cout << "								||========================================||" << endl;
+    cout << "								||	     Developed  by Anupam Debnath ||" << endl;
+    cout << "								||========================================||" << endl << endl;
+	cout << "								Enter Option: ", cin >> opt, cout << endl;
 }
 
 void screenBank(tm *tPtr, int &opt)
@@ -1602,85 +1403,23 @@ void screenBank(tm *tPtr, int &opt)
 	cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 	cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t     Welcome to Bank\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t   Choose an option:\t\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    1) Pay Bills\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    2) Deposits/Cheques\t\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    3) Open up Account\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    4) View your Account\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    5) Exit\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t Enter Option: ", cin >> opt, cout << endl;
+	cout << "								||===================================================||" << endl;
+    cout << "								||             Welcome to APNA BANK                  ||" << endl;
+    cout << "								||           _______________________                 ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||      Choose an option:                            ||" << endl;
+    cout << "								||             1. Pay Bills                          ||" << endl;
+    cout << "								||             2. Deposits/Cheques                   ||" << endl;
+    cout << "								||             3. Open up Account                    ||" << endl;
+    cout << "								||             4. View your Account                  ||" << endl;
+    cout << "								||             5. Exit                               ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||===================================================||" << endl;
+    cout << "								||	     Developed  by Anupam Debnath            ||" << endl;
+    cout << "								||===================================================||" << endl << endl;
+	cout << "								Enter Option: ", cin >> opt, cout << endl;
 }
 
 void screenATMone(tm *tPtr, long &userCardNumber, int &userPINnumber)
@@ -1688,86 +1427,21 @@ void screenATMone(tm *tPtr, long &userCardNumber, int &userPINnumber)
 	cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 	cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t     Welcome to ATM\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\tEnter Following Details:\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    1) Account Number\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    2) Debit Card PIN\t\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t Enter Account Number: ", cin >> userCardNumber, cout << endl;
-	cout << "\t\t\t Enter Debit Card PIN: ", cin >> userPINnumber, cout << endl;
+	cout << "								||===================================================||" << endl;
+    cout << "								||                APNA BANK                          ||" << endl;
+    cout << "								||              Welcome to ATM                       ||" << endl;
+    cout << "								||          _____________________                    ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||      Enter Following Details :=                   ||" << endl;
+    cout << "								||             1. Account Number                     ||" << endl;
+    cout << "								||             2. Debit Card PIN                     ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||===================================================||" << endl;
+    cout << "								||                  Developed  by Anupam Debnath     ||" << endl;
+    cout << "								||===================================================||" << endl << endl;
+	cout << "								Enter Account Number: ", cin >> userCardNumber, cout << endl;
+	cout << "								Enter Debit Card PIN: ", cin >> userPINnumber, cout << endl;
 }
 
 void screenATMtwo(tm *tPtr, int &opt)
@@ -1775,85 +1449,23 @@ void screenATMtwo(tm *tPtr, int &opt)
 	cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 	cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t     Welcome to ATM\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t   Choose an option:\t\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    1) Withdraw Cash\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    2) Balance Inquiry\t\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    3) Change Pin\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    4) Exit\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t Enter Option: ", cin >> opt, cout << endl;
+	cout << "								||===================================================||" << endl;
+    cout << "								||                APNA BANK                          ||" << endl;
+    cout << "								||              Welcome to ATM                       ||" << endl;
+    cout << "								||          _____________________                    ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||      Choose an option :=                          ||" << endl;
+    cout << "								||             1. Withdraw Cash                      ||" << endl;
+    cout << "								||             2. Balance Inquiry                    ||" << endl;
+    cout << "								||             3. Change Pin                         ||" << endl;
+    cout << "								||             4. Exit                               ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||===================================================||" << endl;
+    cout << "								||                  Developed  by Anupam Debnath     ||" << endl;
+    cout << "								||===================================================||" << endl;
+	cout << "								Enter Option: ", cin >> opt, cout << endl;
 }
 
 void screenAdminOne(tm *tPtr, string &adminUserName, string &adminPassword)
@@ -1861,339 +1473,85 @@ void screenAdminOne(tm *tPtr, string &adminUserName, string &adminPassword)
 	cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 	cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    Welcome to Admin\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\tEnter Following Details:\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    1) Username\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    2) Password\t\t\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t Enter Username: ", cin >> adminUserName, cout << endl;
-	cout << "\t\t\t Enter Password: ", cin >> adminPassword, cout << endl;
+	cout << "								||===================================================||" << endl;
+    cout << "								||                APNA BANK                          ||" << endl;
+    cout << "								||              Welcome to Admin                     ||" << endl;
+    cout << "								||          _______________________                  ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||      Enter Following Details :=                   ||" << endl;
+    cout << "								||             1. Username                     	     ||" << endl;
+    cout << "								||             2. Password                     	     ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||===================================================||" << endl;
+    cout << "								||                  Developed  by Anupam Debnath     ||" << endl;
+    cout << "								||===================================================||" << endl << endl;
+	cout << "								Enter Username: ", cin >> adminUserName, cout << endl;
+	cout << "								Enter Password: ", cin >> adminPassword, cout << endl;
 }
 void screenAdminTwo(tm *tPtr, int &opt)
 {
 	cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 	cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    Welcome to Admin\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t   Choose an option:\t\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    1) Process Account Openings\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    2) Process Bill Payments\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    3) Exit\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t Enter Option: ", cin >> opt, cout << endl;
+	cout << "								||===================================================||" << endl;
+    cout << "								||                APNA BANK                          ||" << endl;
+    cout << "								||              Welcome to Admin                     ||" << endl;
+    cout << "								||          _______________________                  ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||      Choose an option :=                          ||" << endl;
+    cout << "								||             1. Process Account Openings           ||" << endl;
+    cout << "								||             2. Process Bill Payments              ||" << endl;
+    cout << "								||             3. Exit                               ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||===================================================||" << endl;
+    cout << "								||                  Developed  by Anupam Debnath     ||" << endl;
+    cout << "								||===================================================||" << endl << endl;
+	cout << "								Enter Option: ", cin >> opt, cout << endl;
 }
 void screenAdminAccountOpenings(tm *tPtr, int &opt)
 {
 	cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 	cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\tWelcome to Account Openings\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t   Choose an option:\t\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    1) View Account Openings\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    2) Process Accounts\t\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    3) View Accounts in Database\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    4) Exit\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t Enter Option: ", cin >> opt, cout << endl;
+	cout << "								||===================================================||" << endl;
+    cout << "								||                  APNA BANK                        ||" << endl;
+    cout << "								||          Welcome to Account Openings              ||" << endl;
+    cout << "								||      __________________________________           ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||      Choose an option :=                          ||" << endl;
+    cout << "								||             1. View Account Openings              ||" << endl;
+    cout << "								||             2. Process Accounts                   ||" << endl;
+    cout << "								||             3. View Accounts in Database          ||" << endl;
+    cout << "								||             4. Exit                               ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||===================================================||" << endl;
+    cout << "								||                  Developed  by Anupam Debnath     ||" << endl;
+    cout << "								||===================================================||" << endl << endl;
+	cout << "								Enter Option: ", cin >> opt, cout << endl;
 }
 void screenAdminBillPayments(tm *tPtr, int &opt)
 {
 	cout << "\n\n\n\t\t\t Date: " << (tPtr->tm_mday) << "/" << (tPtr->tm_mon) + 1 << "/" << (tPtr->tm_year) + 1900 << endl;
 	cout << "\t\t\t Time: " << (tPtr->tm_hour) << ":" << (tPtr->tm_min) << endl;
 
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t Apna Bank \t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    Welcome to Bill Payments\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t   Choose an option:\t\t\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    1) View Bill Payments\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    2) View Bill Payment at Front\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    3) Process Bill Payment at Front\t\t\t\t          #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t    4) Exit\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t #"
-		 << "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t  #" << endl;
-	cout << "\t\t\t ##########################################################################################################################" << endl;
-	cout << "\t\t\t Enter Option: ", cin >> opt, cout << endl;
+	cout << "								||===================================================||" << endl;
+    cout << "								||                  APNA BANK                        ||" << endl;
+    cout << "								||           Welcome to Bill Payments                ||" << endl;
+    cout << "								||      __________________________________           ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||      Choose an option :=                          ||" << endl;
+    cout << "								||             1. View Bill Payments                 ||" << endl;
+    cout << "								||             2. View Bill Payment at Front         ||" << endl;
+    cout << "								||             3. Process Bill Payment at Front      ||" << endl;
+    cout << "								||             4. Exit                               ||" << endl;
+    cout << "								||                                                   ||" << endl;
+    cout << "								||===================================================||" << endl;
+    cout << "								||                  Developed  by Anupam Debnath     ||" << endl;
+    cout << "								||===================================================||" << endl << endl;
+	cout << "								Enter Option: ", cin >> opt, cout << endl;
 }

@@ -1,20 +1,21 @@
 ### Banking Management System (Apna Bank)
 This is a Banking Management System that leverages Object-Oriented Programming principles and Data Structures. In this project, we have implemented the following data structures: LinkedList and Queues.
-
+# Install the Application
+    To run this application, you need to install apnakbank.exe file
 ## The program utilizes the following programming constructs to create its functionality:
-✔️ Classes
-✔️ Constant Functions/Variables
-✔️ Linked List
-✔️ Queues
-✔️ Conditional Statements/Selection Statements
-✔️ Iterative Procedures
+    ✔️ Classes
+    ✔️ Constant Functions/Variables
+    ✔️ Linked List
+    ✔️ Queues
+    ✔️ Conditional Statements/Selection Statements
+    ✔️ Iterative Procedures
 
 ## The program has four main objectives:
 
-✔️ Allow the User to access the bank.
-✔️ Provide the User with access to the ATM.
-✔️ Grant User (Admin) access to the restricted area.
-✔️ Offer the User an option to exit.
+    ✔️ Allow the User to access the bank.
+    ✔️ Provide the User with access to the ATM.
+    ✔️ Grant User (Admin) access to the restricted area.
+    ✔️ Offer the User an option to exit.
 
 # Program Functionality/Sequence:
 
@@ -22,18 +23,18 @@ The program encompasses various functions that users can perform. Upon executing
 
 Once inside the menu, users will be presented with four options:
 
-✔️ Enter the Bank
-✔️ Enter the ATM
-✔️ Administrator (Restricted)
-✔️ Exit
+    ✔️ Enter the Bank
+    ✔️ Enter the ATM
+    ✔️ Administrator (Restricted)
+    ✔️ Exit
 
 ## If the user selects option 1, they will be directed to the bank section with the following choices:
 
-✔️ Pay a Bill
-✔️ Withdraw/Deposit Cash
-✔️ Open a New Account
-✔️ View Account (Enter Username & Password)
-✔️ Exit to Main Menu
+    ✔️ Pay a Bill
+    ✔️ Withdraw/Deposit Cash
+    ✔️ Open a New Account
+    ✔️ View Account (Enter Username & Password)
+    ✔️ Exit to Main Menu
 
 ## If the user chooses option 2, they will access the ATM section, which includes the following choices:
 
